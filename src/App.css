@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
-}
+:root {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  --gold: #9F7C50;
+  --purple: #441564;
+  --white: #FFFFFF;
+  --off-white: #FDF9EE;
+  --brown: #595045;
+  --light-grey: #EDF0F2;
+  --tan: #E6C18A;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  --title-primary: "Fontspring-DEMO-theseasons-bd";
+  --title-secondary: "Agrandir-GrandHeavy";
+  --body-primary: "TT Interphases Pro Trial Condensed Regular";
+  --body-secondary: "Agrandir-Regular";
+  --body-secondary-bold: "Agrandir-TextBold";
+  --body-tertiary: "Swansea-q3pd";
+  --body-tertiary-bold: "SwanseaBold-D0ox";
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

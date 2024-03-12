@@ -1,0 +1,7 @@
+.Mobile{
+    font-family: var(--font-style-logo);
+}
+
+.Desktop{
+    font-family: var(--font-style-primary);
+}
