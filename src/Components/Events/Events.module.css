@@ -1,0 +1,39 @@
+.scheduleWrapper{
+    background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 9vw 0 18vw 0;
+}
+
+.scheduleWrapper h1, h2, h3{
+    text-align: center;
+    color: var(--white);
+}
+
+.scheduleWrapper h2{
+    font-family: var(--title-secondary);
+}
+
+.scheduleWrapper h3{
+    font-family: var(--body-secondary);
+}
+
+.scheduleWrapper h1{
+    font-family: var(--body-secondary-bold);
+}
+
+.eventWrapper{
+    display: flex;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-color: var(--white);
+}
+
+.eventWrapper p{
+    color: var(--light-grey);
+    font-family: var(--body-tertiary);
+}
+
+.events{
+    color: var(--white);
+    font-family: var(--body-tertiary-bold);
+}

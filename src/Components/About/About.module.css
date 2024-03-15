@@ -1,0 +1,53 @@
+.imgMobile{
+    max-width: 100%;
+    height: auto;
+}
+
+.mobileWrapper{
+    background: url("../../Assets/Mobile/about-img-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 7vw 0 13vw 0;
+}
+
+.mobileWrapper h1{
+    font-family: var(--title-primary);
+    color: var(--gold);
+    font-size: 9.5vw;
+    margin: 0 0 0 8vw;
+}
+
+.purpleText{
+    color: var(--purple);
+}
+
+.mobileWrapper p{
+    font-family: var(--body-primary);
+    font-size: 4vw;
+    color: var(--brown);
+    margin: 2vw 8vw 0 8vw;
+}
+
+.goldText{
+    color: var(--gold);
+}
+
+.quoteWrapper{
+    border-style: solid;
+    border-color: var(--gold);
+    border-radius: 1rem;
+    border-width: thin;
+    padding: 6vw 5vw 6vw 5vw;
+    margin: 0 6vw 0 6vw;
+}
+
+.quotation{
+    max-width: 50%;
+    height: auto;
+    margin: -44vw 0 -49vw 7vw;
+}
+
+.quoteMobile{
+    font-family: var(--title-primary);
+    color:  var(--purple);
+    font-size: 4.5vw;
+}

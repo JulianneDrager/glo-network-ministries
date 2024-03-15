@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Fontspring-DEMO-theseasons-bd';
+  src: local('Fontspring-DEMO-theseasons-bd'), url(./Fonts/Fontspring-DEMO-theseasons-bd.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir-GrandHeavy';
+  src: local('Agrandir-GrandHeavy'), url(./Fonts/Agrandir-GrandHeavy.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir-Regular';
+  src: local('Agrandir-Regular'), url(./Fonts/Agrandir-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Agrandir-TextBold';
+  src: local('Agrandir-TextBold'), url(./Fonts/Agrandir-TextBold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Swansea-q3pd';
+  src: local('Swansea-q3pd'), url(./Fonts/Swansea-q3pd.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SwanseaBold-D0ox';
+  src: local('SwanseaBold-D0ox'), url(./Fonts/SwanseaBold-D0ox.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TT Interphases Pro Trial Condensed Regular';
+  src: local('TT Interphases Pro Trial Condensed Regular'), url(./Fonts/TT\ Interphases\ Pro\ Trial\ Condensed\ Regular.ttf) format('truetype');
+}
+
+
 :root {
 
   --gold: #9F7C50;
