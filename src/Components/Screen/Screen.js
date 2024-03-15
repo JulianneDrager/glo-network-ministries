@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from "../Nav/Nav"
 import Header from "../Header/Header"
 import About from "../About/About"
 import Events from "../Events/Events"
@@ -17,7 +16,6 @@ const Screen = () => {
                 zIndex: "1",
                 backgroundColor: "white",
             }}>
-                <Nav />
                 <Header />
                 <About />
                 <Events />

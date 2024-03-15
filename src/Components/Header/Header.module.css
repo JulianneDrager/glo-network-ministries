@@ -1,7 +1,76 @@
-.Mobile{
-    font-family: var(--font-style-logo);
+.headerWrapper{
+    background: url("../../Assets/Desktop/header--bkgd-desktop.svg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.Desktop{
-    font-family: var(--font-style-primary);
+.logoImg{
+    width: 30%;
+    height: auto;
+    margin: 5vw 0 3vw 2vw;
 }
+
+.titleWrapper{
+    margin: 0 0 0 8vw;
+}
+
+.name{
+    font-size: 5vw;
+    font-family: var(--title-primary);
+    color: var(--off-white);
+    line-height: 9vw;
+}
+
+.title{
+    font-size: 7vw;
+    font-family: var(--title-primary);
+    color: var(--off-white);
+    line-height: 7vw;
+}
+
+.logoWrapper{
+    margin: 0 0 0 -4vw;
+}
+
+.fbIcon{
+    max-width: 35%;
+    height: auto;
+    margin: -8vw 0 0 0;
+}
+
+.igIcon{
+    max-width: 35%;
+    height: auto;
+    margin: -8vw 0 0 -24vw;
+}
+
+.btnWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    position: relative;
+    z-index: 12;
+    font-family: var(--body-primary);
+    width: 33%;
+    border-radius: 4rem;
+    border: none;
+    box-shadow: 1.5vw 0 rgba(230,193,138, 0.5);
+    color: var(--brown);
+    background-color: var(--light-grey);
+    padding: 1vw 2vw 1vw 2vw;
+    margin: 14vw 0 0 8vw;
+    font-size: 4.2vw;
+}
+
+@media screen and (min-width:725px) {
+    .headerWrapper{
+        background: url("../../Assets/Desktop/header--bkgd-desktop.svg") no-repeat;
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width:375px) {
+    
+    }
