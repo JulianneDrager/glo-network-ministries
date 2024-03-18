@@ -1,39 +1,85 @@
-.scheduleWrapper{
+.scheduleWrapper {
     background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
     background-size: cover;
     padding: 9vw 0 18vw 0;
 }
 
-.scheduleWrapper h1, h2, h3{
+.scheduleWrapper h1,
+h2,
+h3 {
     text-align: center;
     color: var(--white);
 }
 
-.scheduleWrapper h2{
+.scheduleWrapper h2 {
     font-family: var(--title-secondary);
 }
 
-.scheduleWrapper h3{
+.scheduleWrapper h3 {
     font-family: var(--body-secondary);
 }
 
-.scheduleWrapper h1{
+.scheduleWrapper h1 {
     font-family: var(--body-secondary-bold);
 }
 
-.eventWrapper{
+.eventWrapper,
+.eventWrapperA,
+.eventWrapperB,
+.eventWrapperC {
     display: flex;
     justify-content: center;
     border-bottom-style: solid;
     border-color: var(--white);
 }
 
-.eventWrapper p{
+.eventWrapper,
+.eventWrapperA,
+.eventWrapperB,
+.eventWrapperC p {
     color: var(--light-grey);
     font-family: var(--body-tertiary);
 }
 
-.events{
+.events {
     color: var(--white);
     font-family: var(--body-tertiary-bold);
+}
+
+.colA {
+    margin: 0 -3vw 0 3vw;
+}
+
+.colC{
+    margin: 0 3vw 0 -3vw;
+}
+
+@media screen and (min-width:726px) {
+    .scheduleWrapper {
+        background: url("../../Assets/Desktop/Schedule-bkgd-desktop.svg") no-repeat;
+        background-size: cover;
+        padding: 9vw 0 11vw 0;
+    }
+
+    .scheduleWrapper h2 {
+        font-size: 5vw;
+        margin: -3vw 0 6vw 0;
+    }
+
+    .scheduleWrapper h3 {
+        font-size: 1.5vw;
+    }
+
+    .scheduleWrapper h1 {
+        font-size: 5vw;
+        margin: -1vw 0 3vw 0
+    }
+
+    .eventWrapper {
+        margin: 0 2vw 0 2vw
+    }
+
+    .eventWrapper p {
+        margin: 1vw
+    }
 }

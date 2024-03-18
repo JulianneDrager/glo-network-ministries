@@ -1,37 +1,37 @@
-.imgMobile{
+.imgMobile {
     max-width: 100%;
     height: auto;
 }
 
-.mobileWrapper{
+.mobileWrapper {
     background: url("../../Assets/Mobile/about-img-mobile.jpg") no-repeat;
     background-size: cover;
     padding: 7vw 0 13vw 0;
 }
 
-.mobileWrapper h1{
+.mobileWrapper h1 {
     font-family: var(--title-primary);
     color: var(--gold);
     font-size: 9.5vw;
     margin: 0 0 0 8vw;
 }
 
-.purpleText{
+.purpleText {
     color: var(--purple);
 }
 
-.mobileWrapper p{
+.mobileWrapper p {
     font-family: var(--body-primary);
     font-size: 4vw;
     color: var(--brown);
     margin: 2vw 8vw 0 8vw;
 }
 
-.goldText{
+.goldText {
     color: var(--gold);
 }
 
-.quoteWrapper{
+.quoteWrapper {
     border-style: solid;
     border-color: var(--gold);
     border-radius: 1rem;
@@ -40,14 +40,58 @@
     margin: 0 6vw 0 6vw;
 }
 
-.quotation{
+.quotationMark {
     max-width: 50%;
     height: auto;
     margin: -44vw 0 -49vw 7vw;
 }
 
-.quoteMobile{
+.quotation {
     font-family: var(--title-primary);
-    color:  var(--purple);
+    color: var(--purple);
     font-size: 4.5vw;
+}
+
+.desktopWrapper {
+    background: url("../../Assets/Desktop/about-bkgd-desktop.svg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 4vw;
+}
+
+.desktopWrapper h1 {
+    font-family: var(--title-primary);
+    color: var(--gold);
+    font-size: 4.5vw;
+    margin: 4vw 0 0 4vw;
+}
+
+.desktopWrapper p {
+    font-family: var(--body-primary);
+    font-size: 2vw;
+    color: var(--brown);
+    margin: 1vw 0 0 4vw;
+}
+
+.imgDesktop {
+    max-width: 100%;
+    height: auto;
+    margin: 5vw 0 0 0vw;
+}
+
+
+@media screen and (min-width:726px) {
+    .quotation {
+        font-size: 2vw;
+    }
+
+    .quoteWrapper {
+        padding: 2vw 2vw 2vw 3vw;
+        margin: 0 2vw 0 4vw;
+    }
+
+    .quotationMark {
+        max-width: 40%;
+        margin: -48vw 0 -50vw 5vw;
+    }
 }
