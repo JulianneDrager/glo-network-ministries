@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "@mui/material";
 import HeaderStyle from "./Header.module.css";
 import logo from "../../Assets/AllViews/logo.svg";
 import fbLogo from "../../Assets/AllViews/fb-logo.svg";
@@ -6,6 +7,7 @@ import igLogo from "../../Assets/AllViews/instagram-logo.svg";
 import { Button, Image } from "react-bootstrap";
 
 const Header = () => {
+    const matchMobile = useMediaQuery("(max-width: 725px)");
     const headerWrapper = HeaderStyle.headerWrapper;
     const logoImg = HeaderStyle.logoImg;
     const name = HeaderStyle.name;
@@ -14,27 +16,52 @@ const Header = () => {
     const fbIcon = HeaderStyle.fbIcon;
     const igIcon = HeaderStyle.igIcon;
     const titleWrapper = HeaderStyle.titleWrapper;
-    const logoWrapper = HeaderStyle.logoWrapper;
+    const iconWrapper = HeaderStyle.iconWrapper;
     const btnWrapper = HeaderStyle.btnWrapper;
 
     return (
         <>
-            <div className={headerWrapper}>
-                <Image src={logo} className={logoImg} />
-                <div className={titleWrapper}>
-                    <span className={name}>Pastor Teresa Bryant
-                        <p className={title}>Global Leaders <br /> Outreach Ministries, INC.</p>
-                    </span>
-                </div>
-                <div className={btnWrapper}>
-                    <Button className={btn} href="#events">EVENTS</Button>
-                    <Button className={btn} href="#contact">PARTNER</Button><br />
-                </div>
-                <div className={logoWrapper}>
-                    <Image src={fbLogo} className={fbIcon} />
-                    <Image src={igLogo} className={igIcon} />
-                </div>
+            <div>
+                {/* mobile view */}
+                {matchMobile && (
+                    <div className={headerWrapper}>
+                        <Image src={logo} className={logoImg} />
+                        <div className={titleWrapper}>
+                            <span className={name}>Pastor Teresa Bryant
+                                <p className={title}>Global Leaders <br /> Outreach Ministries, INC.</p>
+                            </span>
+                        </div>
+                        <div className={btnWrapper}>
+                            <Button className={btn} href="#events">EVENTS</Button>
+                            <Button className={btn} href="#contact">PARTNER</Button><br />
+                        </div>
+                        <div className={iconWrapper}>
+                            <Image src={fbLogo} className={fbIcon} />
+                            <Image src={igLogo} className={igIcon} />
+                        </div>
+                    </div>
+                )}
+                {/* Desktop View */}
+                {!matchMobile && (
+                    <div className={headerWrapper}>
+                        <Image src={logo} className={logoImg} />
+                        <div className={titleWrapper}>
+                            <span className={name}>Dr. Teresa Bryant, Pastor
+                                <p className={title}>GLO Network <br />Ministries, INC.</p>
+                            </span>
+                        </div>
+                        <div className={btnWrapper}>
+                            <Button className={btn} href="#events">EVENTS</Button>
+                            <Button className={btn} href="#contact">PARTNER</Button><br />
+                        </div>
+                        <div className={iconWrapper}>
+                            <Image src={fbLogo} className={fbIcon} />
+                            <Image src={igLogo} className={igIcon} />
+                        </div>
+                    </div>
+                )}
             </div>
+
         </>
     )
 }

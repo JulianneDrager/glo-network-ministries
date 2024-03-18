@@ -1,62 +1,62 @@
-.headerWrapper{
-    background: url("../../Assets/Desktop/header--bkgd-desktop.svg") no-repeat;
+.headerWrapper {
+    background: url("../../Assets/Mobile/header-bkgd-mobile.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
-.logoImg{
+.logoImg {
     width: 30%;
     height: auto;
     margin: 5vw 0 3vw 2vw;
 }
 
-.titleWrapper{
+.titleWrapper {
     margin: 0 0 0 8vw;
 }
 
-.name{
+.name {
     font-size: 5vw;
     font-family: var(--title-primary);
     color: var(--off-white);
     line-height: 9vw;
 }
 
-.title{
+.title {
     font-size: 7vw;
     font-family: var(--title-primary);
     color: var(--off-white);
     line-height: 7vw;
 }
 
-.logoWrapper{
+.iconWrapper {
     margin: 0 0 0 -4vw;
 }
 
-.fbIcon{
+.fbIcon {
     max-width: 35%;
     height: auto;
     margin: -8vw 0 0 0;
 }
 
-.igIcon{
+.igIcon {
     max-width: 35%;
     height: auto;
     margin: -8vw 0 0 -24vw;
 }
 
-.btnWrapper{
+.btnWrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.btn{
+.btn {
     position: relative;
     z-index: 12;
     font-family: var(--body-primary);
     width: 33%;
     border-radius: 4rem;
     border: none;
-    box-shadow: 1.5vw 0 rgba(230,193,138, 0.5);
+    box-shadow: 1.5vw 0 rgba(230, 193, 138, 0.5);
     color: var(--brown);
     background-color: var(--light-grey);
     padding: 1vw 2vw 1vw 2vw;
@@ -64,13 +64,56 @@
     font-size: 4.2vw;
 }
 
-@media screen and (min-width:725px) {
-    .headerWrapper{
+@media screen and (min-width:726px) {
+    .headerWrapper {
         background: url("../../Assets/Desktop/header--bkgd-desktop.svg") no-repeat;
-        background-size: contain;
+        background-size: cover;
+    }
+
+    .logoImg {
+        width: 20%;
+        margin: -2vw 0 0vw 0vw;
+    }
+
+    .name {
+        font-size: 3vw;
+        margin-left: -3vw;
+        line-height: 0;
+    }
+
+    .title {
+        font-size: 7vw;
+        margin-left: -3vw;
+        line-height: 7vw;
+    }
+
+    .btnWrapper {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -1vw;
+    }
+
+    .btn {
+        width: 21%;
+        padding: 1.5vw 3.5vw 1.5vw 3.5vw;
+        margin: 1vw 0 0 6vw;
+        font-size: 1.7vw;
+        box-shadow: 1vw 0 rgba(230, 193, 138, 0.5);
+    }
+
+    .iconWrapper{
+        margin: 2vw 0 -3.45vw -2vw;
+    }
+
+    .fbIcon {
+        max-width: 20%;
+        margin: -8vw 8vw 0 0
+    }
+
+    .igIcon {
+        max-width: 20%;
+        margin: -8vw 0 0 -23vw;
     }
 }
 
-@media screen and (min-width:375px) {
-    
-    }
+@media screen and (min-width:375px) {}
