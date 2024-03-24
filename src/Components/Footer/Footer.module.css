@@ -1,0 +1,8 @@
+.footerStyle{
+    background-color: var(--gold);
+    color: var(--white);
+    font-family: var(--body-secondary);
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 1vw;
+}

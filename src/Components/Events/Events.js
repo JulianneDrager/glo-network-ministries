@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import EventsStyle from "./Events.module.css";
 import { useMediaQuery } from "@mui/material";
 import { eventWrapper } from "@testing-library/user-event/dist/utils";
-import { Col, Row } from "react-bootstrap";
+import { Accordion, AccordionContext, Col, Row, useAccordionButton } from "react-bootstrap";
 
 const Events = () => {
     const matchMobile = useMediaQuery("(max-width: 725px)");
@@ -14,31 +14,102 @@ const Events = () => {
     const events = EventsStyle.events;
     const colA = EventsStyle.colA;
     const colC = EventsStyle.colC;
+    const accordionBody = EventsStyle.accordionBody;
+    const seeMore = EventsStyle.seeMore;
+
+
+    const ContextAwareToggle = ({ children, eventKey, callback }) => {
+        const black = 'rgb(0, 0, 0)';
+        const none = 'none';
+        const transparent = 'transparent'
+
+
+        const decoratedOnClick = useAccordionButton(
+            eventKey,
+            () => callback && callback(eventKey),
+        );
+
+        return (
+            <button type="button" onClick={decoratedOnClick} style={{ backgroundColor: transparent, border: none }} >
+                {children}
+            </button>
+        );
+
+    }
 
     return (
-        <div id="events">
+        <div>
             {/* mobile view */}
             {matchMobile && (
-                <div className={scheduleWrapper}>
-                    <h2>SCHEDULE OF EVENTS</h2>
-                    <h3>MONDAY</h3>
-                    <h1>Sep 6</h1>
-                    <div className={eventWrapper}>
-                        <p>12:00 p.m. <br />
-                            <span className={events}>EVENT A</span>
-                        </p>
-                    </div>
-                    <div className={eventWrapper}>
-                        <p>2:00 p.m. <br />
-                            <span className={events}>EVENT A1</span>
-                        </p>
-                    </div>
-                    <div className={eventWrapper}>
-                        <p>7:00 p.m. <br />
-                            <span className={events}>EVENT A2</span>
-                        </p>
-                    </div>
-                </div>
+                <Accordion >
+                    <ContextAwareToggle eventKey="0">
+                        <div className={scheduleWrapper} id="events">
+                            <h2>SCHEDULE OF EVENTS</h2>
+                            <h6>MONDAY</h6>
+                            <h1>Sep 6</h1>
+                            <div className={eventWrapper}>
+                                <p>12:00 p.m. <br />
+                                    <span className={events}>EVENT A</span>
+                                </p>
+                            </div>
+                            <div className={eventWrapper}>
+                                <p>2:00 p.m. <br />
+                                    <span className={events}>EVENT A1</span>
+                                </p>
+                            </div>
+                            <div className={eventWrapper}>
+                                <p>7:00 p.m. <br />
+                                    <span className={events}>EVENT A2</span>
+                                </p>
+                            </div>
+                            <p className={seeMore}>
+                                Click for More
+                            </p>
+                        </div>
+                    </ContextAwareToggle>
+                    <Accordion.Collapse eventKey="0">
+                        <div className={accordionBody}>
+                            <div className={scheduleWrapper}>
+                                <h6>TUESDAY</h6>
+                                <h1>Sep 7</h1>
+                                <div className={eventWrapper}>
+                                    <p>12:00 p.m. <br />
+                                        <span className={events}>EVENT B</span>
+                                    </p>
+                                </div>
+                                <div className={eventWrapper}>
+                                    <p>2:00 p.m. <br />
+                                        <span className={events}>EVENT B1</span>
+                                    </p>
+                                </div>
+                                <div className={eventWrapper}>
+                                    <p>7:00 p.m. <br />
+                                        <span className={events}>EVENT B2</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={scheduleWrapper}>
+                                <h6>WEDNESDAY</h6>
+                                <h1>Sep 8</h1>
+                                <div className={eventWrapper}>
+                                    <p>12:00 p.m. <br />
+                                        <span className={events}>EVENT C</span>
+                                    </p>
+                                </div>
+                                <div className={eventWrapper}>
+                                    <p>2:00 p.m. <br />
+                                        <span className={events}>EVENT C1</span>
+                                    </p>
+                                </div>
+                                <div className={eventWrapper}>
+                                    <p>7:00 p.m. <br />
+                                        <span className={events}>EVENT C2</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </Accordion.Collapse>
+                </Accordion>
             )}
             {/* Desktop View */}
             {!matchMobile && (
@@ -47,7 +118,7 @@ const Events = () => {
                         <h2>SCHEDULE OF EVENTS</h2>
                         <Row>
                             <Col className={colA}>
-                                <h3>MONDAY</h3>
+                                <h6>MONDAY</h6>
                                 <h1>Sep 6</h1>
                                 <div className={eventWrapper}>
                                     <p>12:00 p.m. <br />
@@ -66,7 +137,7 @@ const Events = () => {
                                 </div>
                             </Col>
                             <Col>
-                                <h3>TUESDAY</h3>
+                                <h6>TUESDAY</h6>
                                 <h1>Sep 7</h1>
                                 <div className={eventWrapper}>
                                     <p>12:00 p.m. <br />
@@ -85,7 +156,7 @@ const Events = () => {
                                 </div>
                             </Col>
                             <Col className={colC}>
-                                <h3>WEDNESDAY</h3>
+                                <h6>WEDNESDAY</h6>
                                 <h1>Sep 8</h1>
                                 <div className={eventWrapper}>
                                     <p>12:00 p.m. <br />

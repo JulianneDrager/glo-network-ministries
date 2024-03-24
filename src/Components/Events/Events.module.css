@@ -1,26 +1,30 @@
 .scheduleWrapper {
     background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
     background-size: cover;
-    padding: 9vw 0 18vw 0;
+    padding: 9vw 0 20vw 0;
 }
 
 .scheduleWrapper h1,
 h2,
-h3 {
+h6 {
     text-align: center;
     color: var(--white);
 }
 
 .scheduleWrapper h2 {
     font-family: var(--title-secondary);
+    margin-bottom: 9vw;
 }
 
-.scheduleWrapper h3 {
+.scheduleWrapper h6 {
     font-family: var(--body-secondary);
+    margin-bottom: -1vw;
 }
 
 .scheduleWrapper h1 {
     font-family: var(--body-secondary-bold);
+    font-size: 11vw;
+    margin-bottom: 4vw;
 }
 
 .eventWrapper,
@@ -36,14 +40,20 @@ h3 {
 .eventWrapper,
 .eventWrapperA,
 .eventWrapperB,
-.eventWrapperC p {
+.eventWrapperC,
+.scheduleWrapper p {
     color: var(--light-grey);
     font-family: var(--body-tertiary);
+    margin-top: 2vw;
 }
 
 .events {
     color: var(--white);
     font-family: var(--body-tertiary-bold);
+}
+
+.seeMore{
+    margin: 14vw 0 -19vw 0 !important;
 }
 
 .colA {
@@ -53,6 +63,7 @@ h3 {
 .colC{
     margin: 0 3vw 0 -3vw;
 }
+
 
 @media screen and (min-width:726px) {
     .scheduleWrapper {
@@ -66,7 +77,7 @@ h3 {
         margin: -3vw 0 6vw 0;
     }
 
-    .scheduleWrapper h3 {
+    .scheduleWrapper h6 {
         font-size: 1.5vw;
     }
 

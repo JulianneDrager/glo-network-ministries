@@ -7,7 +7,7 @@ const SubmitButton = ({ ffIsValid, validated }) => {
 
   return (
     <div>
-      <Button variant="light" type="submit" value="send" className={btn}>
+      <Button size="sm" variant="light" type="submit" value="send" className={btn}>
         SUBMIT
       </Button>
     </div>

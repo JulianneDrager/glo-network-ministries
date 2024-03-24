@@ -1,0 +1,112 @@
+.contactMobile {
+    background: url('../../Assets/Mobile/Contact-bkgd-mobile.jpg') no-repeat;
+    background-size: cover;
+}
+
+.contactDesktop {
+    background: url('../../Assets/Desktop/contact-bkgd-desktop.jpg') no-repeat;
+    background-size: cover;
+    padding: 3vw 0 4vw 0;
+    /* text-align: center; */
+}
+
+.formStyle {
+    margin: -4vw 2vw 0 4vw;
+}
+
+.contactTitle {
+    font-family: var(--title-secondary);
+    text-align: center;
+    margin: 10vw 0 0 0;
+}
+
+.infoText,
+.infoTextB {
+    font-family: var(--body-primary);
+    font-size: 4vw;
+    color: var(--off-white);
+    text-align: left;
+}
+
+.labelForm {
+    color: var(--white);
+    font-size: 4.5vw;
+    margin: 2vw 0 0 0;
+}
+
+.btn {
+    color: var(--purple);
+    font-size: 4.5vw;
+    margin: 5vw 0vw 6vw 0;
+}
+
+/* .nameRow{
+    display: flex;
+    align-items: center;
+} */
+
+@media screen and (min-width:726px) {
+    .cardBackground {
+        background-color: rgba(0, 0, 0, 0.75);
+        border-radius: 1vw;
+        margin: 0vw 3vw 0vw 3vw
+    }
+
+    .formStyle {
+        margin: 1vw 2vw 0 4vw;
+    }
+
+    .contactTitle{
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    .infoText, 
+    .infoTextB {
+        font-size: 1.8vw;
+    }
+
+    .infoText{
+        margin-left: -2vw;
+    }
+
+    .infoTextB{
+        margin-left: 11vw;
+    }
+
+    .rowB,
+    .rowC{
+        margin-right: -7vw;
+    }
+
+    .cardBody{
+        padding: 1vw 1vw 1vw 1vw;
+    }
+
+    .labelForm {
+        font-size: 2.3vw;
+        margin: -1vw -5vw 2vw -2vw;
+    }
+
+    /* .labelFormPhone {
+        color: var(--white);
+        font-size: 2.5vw;
+        margin: -1vw -6.5vw 0 -2vw;
+    } */
+
+    .phone,
+    .name{
+        margin-left: 3.7vw;
+    }
+
+    .phone{
+        padding-left: 4vw;
+    }
+
+    .btn {
+        color: var(--gold);
+        font-size: 2vw;
+        width: 30%;
+        margin: 2vw 0 1vw 8.7vw;
+    }
+}
