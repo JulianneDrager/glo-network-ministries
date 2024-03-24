@@ -64,6 +64,12 @@
     font-size: 4.2vw;
 }
 
+.btn:hover {
+    color: var(--gold);
+    background-color: var(--light-grey);
+    transform: scale(.98);
+}
+
 @media screen and (min-width:726px) {
     .headerWrapper {
         background: url("../../Assets/Desktop/header--bkgd-desktop.svg") no-repeat;

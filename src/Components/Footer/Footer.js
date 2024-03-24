@@ -3,12 +3,11 @@ import FooterStyle from "./Footer.module.css";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-    const footerDesktop = FooterStyle.footerDesktop;
+    const footerStyle = FooterStyle.footerStyle;
 
     return (
-        <footer className={footerDesktop}>
-            COPY RIGHT @ {currentYear}
-            <a href="https://www.designinglory.com">DESIGNINGLORY.COM</a>
+        <footer className={footerStyle}>
+           @ COPYRIGHT GLOMINISTRIESNETWORK {currentYear}
         </footer>
     );
 };

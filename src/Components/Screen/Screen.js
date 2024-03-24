@@ -14,7 +14,7 @@ const Screen = () => {
                 margin: "0 auto",
                 position: "relative",
                 zIndex: "1",
-                backgroundColor: "white",
+                backgroundColor: "var(--purple)",
             }}>
                 <Header />
                 <About />
