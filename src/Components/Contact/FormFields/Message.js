@@ -5,7 +5,7 @@ import { useMediaQuery } from "@mui/material";
 
 const Message = () => {
   const matchMobile = useMediaQuery("(max-width: 725px)");
-  const messageContact = ContactStyle.messageContact;
+  const message = ContactStyle.messageContact;
   const labelForm = ContactStyle.labelForm;
   return (
     <>
@@ -14,7 +14,7 @@ const Message = () => {
         <div>
           <Form.Label className={labelForm}>Message</Form.Label>
           <Form.Control
-            className={messageContact}
+            className={message}
             size="sm"
             as="textarea"
             name="message"
@@ -30,7 +30,7 @@ const Message = () => {
             <Form.Label className={labelForm} column sm="2">Message</Form.Label>
             <Col sm="10">
               <Form.Control
-                className={messageContact}
+                className={message}
                 size="sm"
                 as="textarea"
                 name="message"

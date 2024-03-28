@@ -46,7 +46,7 @@
 
 .btnWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .btn {
@@ -70,6 +70,47 @@
     transform: scale(.98);
 }
 
+@media screen and (min-width:414px) {
+    .btn{
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width:568px) {
+    .btn{
+        font-size: 2.8vw;
+        width: 25%;
+        margin: 10vw 0 0 8vw;
+    }
+
+    .igIcon{
+        max-width: 30%;
+        margin: -8vw 0 0 -22vw;
+    }
+
+    .fbIcon{
+        max-width: 30%;
+        margin: -8vw 0 0 1.5vw;
+    }
+}
+
+@media screen and (min-width:667px) {
+    .btn{
+        font-size: 2.5vw;
+        width: 23%;
+    }
+
+    .igIcon{
+        max-width: 25%;
+        margin: -6vw 0 0 -18vw;
+    }
+
+    .fbIcon{
+        max-width: 25%;
+        margin: -6vw 0 0 3vw;
+    }
+}
+
 @media screen and (min-width:726px) {
     .headerWrapper {
         background: url("../../Assets/Desktop/header--bkgd-desktop.svg") no-repeat;
@@ -78,7 +119,7 @@
 
     .logoImg {
         width: 20%;
-        margin: -2vw 0 0vw 0vw;
+        margin: -2vw 0 0vw 1vw;
     }
 
     .name {
@@ -118,8 +159,53 @@
 
     .igIcon {
         max-width: 20%;
-        margin: -8vw 0 0 -23vw;
+        margin: -8vw 0 0 -22vw;
     }
 }
 
-@media screen and (min-width:375px) {}
+@media screen and (min-width:1024px) {
+    .btn{
+        width: 18%;
+    padding: 1vw 3.5vw 1vw 3.5vw;
+    font-size: 1.5vw;
+    }
+
+    .fbIcon{
+        max-width: 17%;
+    margin: -6vw 10vw 3vw 1.5vw;
+    }
+
+    .igIcon{
+        max-width: 17%;
+    margin: -6vw 0 3vw -22vw;
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+    .name{
+        font-size: 2.5vw;
+    }
+
+    .title{
+        font-size: 6vw;
+    }
+
+    .btn{
+        width: 15%;
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    }
+
+    .fbIcon{
+        max-width: 15%;
+    margin: -4vw 10vw 3vw 2vw;
+    }
+
+    .igIcon{
+        max-width: 15%;
+    margin: -4vw 0 3vw -20vw;
+    }
+}
+
+@media screen and (min-width:1700px) {}

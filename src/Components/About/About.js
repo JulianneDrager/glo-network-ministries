@@ -9,7 +9,7 @@ import { purple } from "@mui/material/colors";
 const About = () => {
     const matchMobile = useMediaQuery("(max-width: 725px)");
     const mobileWrapper = AboutStyle.mobileWrapper;
-    const imgMobile = AboutStyle.imgMobile;
+    const aboutImg = AboutStyle.aboutImg;
     const goldText = AboutStyle.goldText;
     const quoteMobile = AboutStyle.quoteMobile;
     const quotation = AboutStyle.quotation;
@@ -24,8 +24,9 @@ const About = () => {
             {/* mobile view */}
             {matchMobile && (
                 <div>
-                    <Image src={aboutPhoto} className={imgMobile} />
+                    
                     <div className={mobileWrapper}>
+                        <Image src={aboutPhoto} className={aboutImg} />
                         <h1>About <span className={purpleText}>G.L.O.</span></h1>
                         <p>
                             We believe creating platforms to display the importance of the performing arts and collaborating feeding programs are some of the most effective ways to improving human conditions and community outreach.{' '}
@@ -56,7 +57,7 @@ const About = () => {
                             </div>
                         </Col>
                         <Col>
-                            <Image src={aboutPhoto} className={imgDesktop} />
+                            <Image src={aboutPhoto} className={aboutImg} />
                         </Col>
                     </Row>
                 </div>

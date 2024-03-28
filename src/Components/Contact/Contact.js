@@ -56,7 +56,7 @@ const Contact = () => {
       {/* mobile view */}
       {matchMobile && (
         <div className={contactMobile}>
-          <Card bg="transparent">
+          <Card bg="transparent" border="0">
             <Card.Title>
               <Title />
             </Card.Title>

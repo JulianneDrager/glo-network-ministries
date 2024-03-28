@@ -1,9 +1,11 @@
 import React from 'react'
 import Header from "../Header/Header"
-import About from "../About/About"
-import Events from "../Events/Events"
 import Contact from "../Contact/Contact"
 import Footer from "../Footer/Footer"
+import AboutMap from '../About/AboutMap'
+import EventsMap from '../Events/EventsMap'
+import ContactMap from '../Contact/ContactMap'
+import HeaderMap from '../Header/HeaderMap'
 
 const Screen = () => {
     return (
@@ -16,10 +18,10 @@ const Screen = () => {
                 zIndex: "1",
                 backgroundColor: "var(--purple)",
             }}>
-                <Header />
-                <About />
-                <Events />
-                <Contact />
+                <HeaderMap />
+                <AboutMap />
+                <EventsMap />
+                <ContactMap />
                 <Footer />
             </div>
         </>
