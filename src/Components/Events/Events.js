@@ -41,79 +41,86 @@ const Events = () => {
         <div>
             {/* mobile view */}
             {matchMobile && (
-                <Accordion >
-                    <ContextAwareToggle eventKey="0">
-                        <div className={scheduleWrapper} id="events">
+                <div className={scheduleWrapper}>
+                    <Accordion >
+                        <div id="events">
                             <h2>SCHEDULE OF EVENTS</h2>
-                            <h6>MONDAY</h6>
-                            <h1>Sep 6</h1>
-                            <div className={eventWrapper}>
-                                <p>12:00 p.m. <br />
-                                    <span className={events}>EVENT A</span>
-                                </p>
-                            </div>
-                            <div className={eventWrapper}>
-                                <p>2:00 p.m. <br />
-                                    <span className={events}>EVENT A1</span>
-                                </p>
-                            </div>
-                            <div className={eventWrapper}>
-                                <p>7:00 p.m. <br />
-                                    <span className={events}>EVENT A2</span>
-                                </p>
+                            <div>
+                                <h6>MONDAY</h6>
+                                <h1>Sep 6</h1>
+                                <div className={eventWrapper}>
+                                    <p>12:00 p.m. <br />
+                                        <span className={events}>EVENT A</span>
+                                    </p>
+                                </div>
+                                <div className={eventWrapper}>
+                                    <p>2:00 p.m. <br />
+                                        <span className={events}>EVENT A1</span>
+                                    </p>
+                                </div>
+                                <div className={eventWrapper}>
+                                    <p>7:00 p.m. <br />
+                                        <span className={events}>EVENT A2</span>
+                                    </p>
+                                </div>
                             </div>
                             <p className={seeMore}>
                                 Click for More
                             </p>
                         </div>
-                    </ContextAwareToggle>
-                    <Accordion.Collapse eventKey="0">
-                        <div className={accordionBody}>
-                            <div className={scheduleWrapper}>
-                                <h6>TUESDAY</h6>
-                                <h1>Sep 7</h1>
-                                <div className={eventWrapper}>
-                                    <p>12:00 p.m. <br />
-                                        <span className={events}>EVENT B</span>
-                                    </p>
+                        <ContextAwareToggle eventKey="0">
+                            <p className={seeMore}>
+                                Click for More
+                            </p>
+                        </ContextAwareToggle>
+                        <Accordion.Collapse eventKey="0">
+                            <div>
+                                <div cclassName={accordionBody}>
+                                    <h6>TUESDAY</h6>
+                                    <h1>Sep 7</h1>
+                                    <div className={eventWrapper}>
+                                        <p>12:00 p.m. <br />
+                                            <span className={events}>EVENT B</span>
+                                        </p>
+                                    </div>
+                                    <div className={eventWrapper}>
+                                        <p>2:00 p.m. <br />
+                                            <span className={events}>EVENT B1</span>
+                                        </p>
+                                    </div>
+                                    <div className={eventWrapper}>
+                                        <p>7:00 p.m. <br />
+                                            <span className={events}>EVENT B2</span>
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className={eventWrapper}>
-                                    <p>2:00 p.m. <br />
-                                        <span className={events}>EVENT B1</span>
-                                    </p>
-                                </div>
-                                <div className={eventWrapper}>
-                                    <p>7:00 p.m. <br />
-                                        <span className={events}>EVENT B2</span>
-                                    </p>
+                                <div className={accordionBody}>
+                                    <h6>WEDNESDAY</h6>
+                                    <h1>Sep 8</h1>
+                                    <div className={eventWrapper}>
+                                        <p>12:00 p.m. <br />
+                                            <span className={events}>EVENT C</span>
+                                        </p>
+                                    </div>
+                                    <div className={eventWrapper}>
+                                        <p>2:00 p.m. <br />
+                                            <span className={events}>EVENT C1</span>
+                                        </p>
+                                    </div>
+                                    <div className={eventWrapper}>
+                                        <p>7:00 p.m. <br />
+                                            <span className={events}>EVENT C2</span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className={scheduleWrapper}>
-                                <h6>WEDNESDAY</h6>
-                                <h1>Sep 8</h1>
-                                <div className={eventWrapper}>
-                                    <p>12:00 p.m. <br />
-                                        <span className={events}>EVENT C</span>
-                                    </p>
-                                </div>
-                                <div className={eventWrapper}>
-                                    <p>2:00 p.m. <br />
-                                        <span className={events}>EVENT C1</span>
-                                    </p>
-                                </div>
-                                <div className={eventWrapper}>
-                                    <p>7:00 p.m. <br />
-                                        <span className={events}>EVENT C2</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </Accordion.Collapse>
-                </Accordion>
+                        </Accordion.Collapse>
+                    </Accordion>
+                </div>
             )}
             {/* Desktop View */}
             {!matchMobile && (
-                <div>
+                <div id="events">
                     <div className={scheduleWrapper}>
                         <h2>SCHEDULE OF EVENTS</h2>
                         <Row>

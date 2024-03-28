@@ -1,8 +1,44 @@
 .footerStyle{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
     background-color: var(--gold);
     color: var(--white);
     font-family: var(--body-secondary);
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
-    padding-top: 1vw;
+    /* padding-top: 1vw; */
+}
+
+@media screen and (min-width:568px) {
+    .footerStyle{
+        font-size: 2.5vw;
+    }
+ }
+
+ @media screen and (min-width:667px) {
+    .footerStyle{
+        font-size: 2vw;
+    }
+ }
+
+ @media screen and (min-width:726px) {
+    .footerStyle{
+        font-size: 1.5vw;
+    }
+ }
+
+ @media screen and (min-width:1024px) {
+    .footerStyle{
+        font-size: 1.2vw;
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+    .footerStyle{
+        font-size: 1.1vw;
+    }
+
 }

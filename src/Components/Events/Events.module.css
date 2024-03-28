@@ -1,6 +1,12 @@
 .scheduleWrapper {
     background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
     background-size: cover;
+    padding: 9vw 0 0 0;
+}
+
+.accordionBody{
+    background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
+    background-size: cover;
     padding: 9vw 0 20vw 0;
 }
 
@@ -45,6 +51,7 @@ h6 {
     color: var(--light-grey);
     font-family: var(--body-tertiary);
     margin-top: 2vw;
+    text-align: center;
 }
 
 .events {
@@ -53,7 +60,7 @@ h6 {
 }
 
 .seeMore{
-    margin: 14vw 0 -19vw 0 !important;
+    margin: 14vw 0 0vw 31vw !important;
 }
 
 .colA {
@@ -64,6 +71,49 @@ h6 {
     margin: 0 3vw 0 -3vw;
 }
 
+@media screen and (min-width:375px) {
+    .seeMore{
+        margin: 14vw 0 0vw 33vw !important;
+    }
+}
+
+@media screen and (min-width:414px) {
+    .scheduleWrapper h2{
+        margin: 0vw 5vw 9vw 5vw;
+    }
+
+    .seeMore{
+        margin: 14vw 0 0vw 36vw !important;
+    }
+}
+
+@media screen and (min-width:568px) {
+    .scheduleWrapper h1{
+        font-size: 8vw;
+    }
+
+    .seeMore{
+        margin: 12vw 0 0vw 40vw !important;
+    }
+
+    .accordionBody{
+        padding: 9vw 0 15vw 0;
+    }
+ }
+
+ @media screen and (min-width:667px) {
+    .scheduleWrapper h1{
+        font-size: 7vw;
+    }
+
+    .seeMore{
+        margin: 10vw 0 0vw 42vw !important;
+    }
+
+    .accordionBody{
+        padding: 9vw 0 13vw 0;
+    }
+ }
 
 @media screen and (min-width:726px) {
     .scheduleWrapper {
@@ -79,6 +129,7 @@ h6 {
 
     .scheduleWrapper h6 {
         font-size: 1.5vw;
+        margin-bottom: 0.5vw;
     }
 
     .scheduleWrapper h1 {
@@ -93,4 +144,33 @@ h6 {
     .eventWrapper p {
         margin: 1vw
     }
+}
+
+@media screen and (min-width:1024px) {
+    .scheduleWrapper h2{
+        font-size: 4vw;
+    }
+
+    .eventWrapper{
+        margin: 0 4vw 0 4vw;
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+    .scheduleWrapper h2{
+        font-size: 3vw;
+    }
+
+    .scheduleWrapper h1{
+        font-size: 4vw;
+    }
+
+    .scheduleWrapper h6{
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (min-width:1700px) {
+
 }
