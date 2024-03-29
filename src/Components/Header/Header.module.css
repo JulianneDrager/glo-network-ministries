@@ -71,41 +71,41 @@
 }
 
 @media screen and (min-width:414px) {
-    .btn{
+    .btn {
         font-size: 3.5vw;
     }
 }
 
 @media screen and (min-width:568px) {
-    .btn{
+    .btn {
         font-size: 2.8vw;
         width: 25%;
         margin: 10vw 0 0 8vw;
     }
 
-    .igIcon{
+    .igIcon {
         max-width: 30%;
         margin: -8vw 0 0 -22vw;
     }
 
-    .fbIcon{
+    .fbIcon {
         max-width: 30%;
         margin: -8vw 0 0 1.5vw;
     }
 }
 
 @media screen and (min-width:667px) {
-    .btn{
+    .btn {
         font-size: 2.5vw;
         width: 23%;
     }
 
-    .igIcon{
+    .igIcon {
         max-width: 25%;
         margin: -6vw 0 0 -18vw;
     }
 
-    .fbIcon{
+    .fbIcon {
         max-width: 25%;
         margin: -6vw 0 0 3vw;
     }
@@ -148,64 +148,89 @@
         box-shadow: 1vw 0 rgba(230, 193, 138, 0.5);
     }
 
-    .iconWrapper{
+    .iconWrapper {
         margin: 2vw 0 -3.45vw -2vw;
     }
 
     .fbIcon {
         max-width: 20%;
-        margin: -8vw 8vw 0 0
+        margin: -6vw 8vw 4vw 0;
     }
 
     .igIcon {
         max-width: 20%;
-        margin: -8vw 0 0 -22vw;
+        margin: -6vw 0 4vw -22vw
     }
 }
 
 @media screen and (min-width:1024px) {
-    .btn{
+    .btn {
         width: 18%;
-    padding: 1vw 3.5vw 1vw 3.5vw;
-    font-size: 1.5vw;
+        padding: 1vw 3.5vw 1vw 3.5vw;
+        font-size: 1.5vw;
     }
 
-    .fbIcon{
+    .fbIcon {
         max-width: 17%;
-    margin: -6vw 10vw 3vw 1.5vw;
+        margin: -6vw 10vw 3vw 1.5vw;
     }
 
-    .igIcon{
+    .igIcon {
         max-width: 17%;
-    margin: -6vw 0 3vw -22vw;
+        margin: -6vw 0 3vw -22vw;
     }
 
 }
 
 @media screen and (min-width:1366px) {
-    .name{
+    .name {
         font-size: 2.5vw;
     }
 
-    .title{
+    .title {
         font-size: 6vw;
     }
 
-    .btn{
+    .btn {
         width: 15%;
-    font-size: 1.2vw;
-    margin-top: 3vw;
+        font-size: 1.2vw;
+        margin-top: 3vw;
     }
 
-    .fbIcon{
+    .fbIcon {
         max-width: 15%;
-    margin: -4vw 10vw 3vw 2vw;
+        margin: -4vw 10vw 3vw 2vw;
     }
 
-    .igIcon{
+    .igIcon {
         max-width: 15%;
-    margin: -4vw 0 3vw -20vw;
+        margin: -4vw 0 3vw -20vw;
     }
 }
 
-@media screen and (min-width:1700px) {}
+@media screen and (min-width:1700px) {
+    .name {
+        font-size: 36px;
+    }
+
+    .title {
+        font-size: 107px;
+    }
+
+    .btn {
+        width: 13%;
+        font-size: 17px;
+        padding: .7vw 1vw .7vw 2vw;
+    }
+
+    .fbIcon {
+        max-width: 13%;
+        margin: -4vw -100px 3vw 2.5vw;
+    }
+
+    .igIcon {
+        max-width: 13%;
+        margin: -4vw 0 3vw -52px;
+    }
+
+}
