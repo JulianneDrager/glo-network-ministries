@@ -42,52 +42,54 @@
 }
 
 @media screen and (min-width:414px) {
-    .btn{
+    .btn {
         font-size: 3.8vw;
     }
 
-    .contactMobile{
+    .contactMobile {
         padding-bottom: 4vw;
     }
 
-    .labelForm{
+    .labelForm {
         font-size: 4vw;
     }
 }
 
 @media screen and (min-width:568px) {
-    .contactMobile{
+    .contactMobile {
         padding-bottom: 0vw;
     }
 
-   .contactTitle{
-    margin: 8vw 0 2vw 0;
-   }
+    .contactTitle {
+        margin: 8vw 0 2vw 0;
+    }
 
-   .infoText{
-    font-size: 3vw;
-   }
+    .infoText {
+        font-size: 3vw;
+    }
 
-   .labelForm{
-    font-size: 3vw;
-   }
-   .btn{
-    font-size: 2.8vw;
-   }
- }
+    .labelForm {
+        font-size: 3vw;
+    }
 
- @media screen and (min-width:667px) {
-   .infoText{
-    font-size: 2.5vw;
-   }
+    .btn {
+        font-size: 2.8vw;
+    }
+}
 
-   .labelForm{
-    font-size: 2.5vw;
-   }
-   .btn{
-    font-size: 2.5vw;
-   }
- }
+@media screen and (min-width:667px) {
+    .infoText {
+        font-size: 2.5vw;
+    }
+
+    .labelForm {
+        font-size: 2.5vw;
+    }
+
+    .btn {
+        font-size: 2.5vw;
+    }
+}
 
 @media screen and (min-width:726px) {
     .cardBackground {
@@ -100,30 +102,30 @@
         margin: 1vw 2vw 0 4vw;
     }
 
-    .contactTitle{
+    .contactTitle {
         margin: 0;
         font-size: 5vw;
     }
 
-    .infoText, 
+    .infoText,
     .infoTextB {
         font-size: 1.8vw;
     }
 
-    .infoText{
+    .infoText {
         margin-left: -2vw;
     }
 
-    .infoTextB{
+    .infoTextB {
         margin-left: 11vw;
     }
 
     .rowB,
-    .rowC{
+    .rowC {
         margin-right: -7vw;
     }
 
-    .cardBody{
+    .cardBody {
         padding: 1vw 1vw 1vw 1vw;
     }
 
@@ -133,7 +135,7 @@
     }
 
     .phone,
-    .name{
+    .name {
         margin-left: 3.7vw;
     }
 
@@ -146,72 +148,72 @@
 }
 
 @media screen and (min-width:1024px) {
-    .contactTitle{
-        font-size: 4vw; 
+    .contactTitle {
+        font-size: 4vw;
         margin-bottom: 1vw;
     }
 
     .infoText,
-    .infoTextB{
+    .infoTextB {
         font-size: 1.6vw;
     }
 
-    .labelForm{
+    .labelForm {
         font-size: 1.8vw;
     }
 
     .phone,
-    .name{
+    .name {
         margin-left: 2vw;
     }
 
-    .phone{
+    .phone {
         margin-right: 2vw;
     }
 
     .email,
-    .message{
+    .message {
         margin-left: -2vw;
     }
 
-    .btn{
+    .btn {
         font-size: 1.5vw;
-    width: 20%;
-    margin: 2vw 0 1vw 6.7vw;
-}
+        width: 20%;
+        margin: 2vw 0 1vw 6.7vw;
+    }
 
 }
 
 @media screen and (min-width:1366px) {
-    .contactTitle{
+    .contactTitle {
         font-size: 3vw;
     }
 
     .infoText,
-    .infoTextB{
+    .infoTextB {
         font-size: 1.4vw;
         margin-bottom: 3vw;
     }
 
-    .labelForm{
+    .labelForm {
         font-size: 1.5vw;
     }
 
     .phone,
-    .name{
+    .name {
         margin-left: 1vw;
     }
 
-    .phone{
+    .phone {
         margin-right: 3vw;
     }
 
     .email,
-    .message{
+    .message {
         margin-left: -3vw;
     }
 
-    .btn{
+    .btn {
         margin: 2vw 0 1vw 5.7vw;
         font-size: 1.2vw;
         width: 15%;
@@ -219,5 +221,35 @@
 }
 
 @media screen and (min-width:1700px) {
+    .contactTitle {
+        font-size: 50px;
+        margin-top: -1vw;
+    }
+
+    .infoText,
+    .infoTextB {
+        font-size: 19px;
+        margin-bottom: 2vw;
+    }
+
+    .labelForm {
+        font-size: 20px;
+        margin: -0.5vw -5vw 1.5vw -2vw;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 13%;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .name {
+        margin-left: 0.5vw;
+    }
+
+    .btn {
+        margin: 2vw 0 1vw 3.7vw;
+    }
 
 }

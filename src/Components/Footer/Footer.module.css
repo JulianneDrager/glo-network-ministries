@@ -1,8 +1,8 @@
-.footerStyle{
+.footerStyle {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
     background-color: var(--gold);
     color: var(--white);
     font-family: var(--body-secondary);
@@ -12,33 +12,39 @@
 }
 
 @media screen and (min-width:568px) {
-    .footerStyle{
+    .footerStyle {
         font-size: 2.5vw;
     }
- }
+}
 
- @media screen and (min-width:667px) {
-    .footerStyle{
+@media screen and (min-width:667px) {
+    .footerStyle {
         font-size: 2vw;
     }
- }
+}
 
- @media screen and (min-width:726px) {
-    .footerStyle{
+@media screen and (min-width:726px) {
+    .footerStyle {
         font-size: 1.5vw;
     }
- }
+}
 
- @media screen and (min-width:1024px) {
-    .footerStyle{
+@media screen and (min-width:1024px) {
+    .footerStyle {
         font-size: 1.2vw;
     }
 
 }
 
 @media screen and (min-width:1366px) {
-    .footerStyle{
+    .footerStyle {
         font-size: 1.1vw;
     }
 
+}
+
+@media screen and (min-width:1700px) {
+    .footerStyle {
+        font-size: 15px;
+    }
 }
