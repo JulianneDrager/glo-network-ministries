@@ -1,0 +1,203 @@
+.scheduleWrapper {
+    background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 9vw 0 0 0;
+}
+
+.accordionBody {
+    background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 9vw 0 8vw 0;
+}
+
+.scheduleWrapper h1,
+h2,
+h6 {
+    text-align: center;
+    color: var(--white);
+}
+
+.scheduleWrapper h2 {
+    /* font-family: var(--title-secondary); */
+    margin-bottom: 9vw;
+}
+
+.scheduleWrapper h6 {
+    font-family: var(--body-secondary);
+    margin-bottom: -1vw;
+}
+
+.scheduleWrapper h1 {
+    font-family: var(--body-secondary-bold);
+    font-size: 11vw;
+    margin-bottom: 4vw;
+}
+
+.eventWrapper,
+.eventWrapperA,
+.eventWrapperB,
+.eventWrapperC {
+    display: flex;
+    justify-content: center;
+    /* border-bottom-style: solid;
+    border-color: var(--white); */
+}
+
+.eventWrapper,
+.eventWrapperA,
+.eventWrapperB,
+.eventWrapperC,
+.scheduleWrapper p {
+    color: var(--light-grey);
+    font-family: var(--body-tertiary);
+    margin-top: 2vw;
+    /* text-align: center; */
+}
+
+.brClass {
+    display: block;
+}
+
+.events {
+    color: var(--white);
+    font-family: var(--body-tertiary-bold);
+}
+
+.seeMore {
+    /* margin: 0 auto; */
+    padding: 2vw;
+    background-color: black;
+    border-radius: .3rem;
+    border: none;
+    color: black;
+    background-color: white;
+    margin: 2rem 0 1rem 0;
+}
+
+.seeMore:hover {
+    background-color: #351c49;
+    color: white;
+    cursor: pointer;
+}
+
+.colA {
+    margin: 0 -3vw 0 3vw;
+}
+
+.colC {
+    margin: 0 3vw 0 -3vw;
+}
+
+/* @media screen and (min-width:375px) {
+    .seeMore {
+        margin: 14vw 0 0vw 33vw !important;
+    }
+} */
+
+@media screen and (min-width:414px) {
+    .scheduleWrapper h2 {
+        margin: 0vw 5vw 9vw 5vw;
+    }
+
+}
+
+@media screen and (min-width:568px) {
+    .scheduleWrapper h1 {
+        font-size: 8vw;
+    }
+
+    .accordionBody {
+        padding: 9vw 0 15vw 0;
+    }
+}
+
+@media screen and (min-width:667px) {
+    .scheduleWrapper h1 {
+        font-size: 7vw;
+    }
+
+    .seeMore {
+        margin: 10vw 0 0vw 42vw !important;
+    }
+
+    .accordionBody {
+        padding: 9vw 0 13vw 0;
+    }
+}
+
+@media screen and (min-width:726px) {
+    .brClass {
+        display: none;
+    }
+
+    .scheduleWrapper {
+        background: url("../../Assets/Desktop/Schedule-bkgd-desktop.jpg") no-repeat;
+        background-size: cover;
+        padding: 9vw 0 11vw 0;
+    }
+
+    .scheduleWrapper h2 {
+        font-size: 5vw;
+        margin: -3vw 0 6vw 0;
+    }
+
+    .scheduleWrapper h6 {
+        font-size: 1.5vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .scheduleWrapper h1 {
+        font-size: 5vw;
+        margin: -1vw 0 3vw 0
+    }
+
+    .eventWrapper {
+        margin: 0 2vw 0 2vw;
+        border-bottom-style: solid;
+        border-color: var(--white);
+    }
+
+    .eventWrapper p {
+        margin: 1vw
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .scheduleWrapper h2 {
+        font-size: 4vw;
+    }
+
+    .eventWrapper {
+        margin: 0 4vw 0 4vw;
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+    .scheduleWrapper h2 {
+        font-size: 3vw;
+    }
+
+    .scheduleWrapper h1 {
+        font-size: 4vw;
+    }
+
+    .scheduleWrapper h6 {
+        font-size: 1.1vw;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .scheduleWrapper h2 {
+        font-size: 50px;
+        margin: -5vw 0 6vw 0;
+    }
+
+    .scheduleWrapper h6 {
+        font-size: 17px;
+    }
+
+    .scheduleWrapper h1 {
+        font-size: 70px;
+    }
+}

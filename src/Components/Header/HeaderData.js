@@ -14,47 +14,71 @@ const titleWrapper = HeaderStyle.titleWrapper;
 const iconWrapper = HeaderStyle.iconWrapper;
 const btnWrapper = HeaderStyle.btnWrapper;
 
+const showVenmo = () => {
+  alert("Copy and Paste Venmo @DrTeresaBryant");
+};
+
 const HeaderData = [
-    {
-        id: 1,
-        section: <>
-            <Image src={logo} className={logoImg} />
-            <div className={titleWrapper}>
-                <span className={name}>Pastor Teresa Bryant
-                    <p className={title}>Global Leaders <br /> Outreach Ministries, INC.</p>
-                </span>
-            </div>
-        </>
-    },
-    {
-        id: 2,
-        section: <>
-            <Image src={logo} className={logoImg} />
-            <div className={titleWrapper}>
-                <span className={name}>Dr. Teresa Bryant, Pastor
-                    <p className={title}>GLO Network <br />Ministries, INC.</p>
-                </span>
-            </div>
-        </>
-    },
-    {
-        id: 3,
-        section: <>
-            <div className={btnWrapper}>
-                <Button className={btn} href="#events">EVENTS</Button>
-                <Button className={btn} href="#contact">PARTNER</Button><br />
-            </div>
-        </>
-    },
-    {
-        id: 4,
-        section: <>
-            <div className={iconWrapper}>
-                <Image src={fbLogo} className={fbIcon} />
-                <Image src={igLogo} className={igIcon} />
-            </div>
-        </>
-    }
+  {
+    id: 1,
+    section: (
+      <>
+        <Image src={logo} className={logoImg} />
+        <div className={titleWrapper}>
+          <span className={name}>
+            Pastor Teresa Bryant
+            <p className={title}>
+              Global Leaders <br /> Outreach Ministries, INC.
+            </p>
+          </span>
+        </div>
+      </>
+    ),
+  },
+  {
+    id: 2,
+    section: (
+      <>
+        <Image src={logo} className={logoImg} />
+        <div className={titleWrapper}>
+          <span className={name}>
+            Dr. Teresa Bryant, Pastor
+            <p className={title}>
+              GLO Network <br />
+              Ministries, INC.
+            </p>
+          </span>
+        </div>
+      </>
+    ),
+  },
+  {
+    id: 3,
+    section: (
+      <>
+        <div className={btnWrapper}>
+          <Button href="#Announcements" className={btn}>
+            Weekly Announcements
+          </Button>
+          <Button onClick={showVenmo} className={btn}>
+            Give via Venmo @DrTeresaBryant
+          </Button>
+          <br />
+        </div>
+      </>
+    ),
+  },
+  {
+    id: 4,
+    section: (
+      <>
+        <div className={iconWrapper}>
+          <Image src={fbLogo} className={fbIcon} />
+          <Image src={igLogo} className={igIcon} />
+        </div>
+      </>
+    ),
+  },
 ];
 
 export default HeaderData;

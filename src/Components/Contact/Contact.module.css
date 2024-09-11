@@ -15,10 +15,11 @@
 }
 
 .contactTitle {
-    font-family: var(--title-secondary);
+    /* font-family: var(--title-secondary); */
     color: var(--white);
     text-align: center;
-    margin: 10vw 0 0 0;
+    margin: 1vw 0 !important;
+    font-size: 11vw;
 }
 
 .infoText,

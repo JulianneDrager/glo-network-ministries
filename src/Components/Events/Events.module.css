@@ -7,7 +7,7 @@
 .accordionBody {
     background: url("../../Assets/Mobile/schedule-background-mobile.jpg") no-repeat;
     background-size: cover;
-    padding: 9vw 0 20vw 0;
+    padding: 9vw 0 8vw 0;
 }
 
 .scheduleWrapper h1,
@@ -18,7 +18,7 @@ h6 {
 }
 
 .scheduleWrapper h2 {
-    font-family: var(--title-secondary);
+    /* font-family: var(--title-secondary); */
     margin-bottom: 9vw;
 }
 
@@ -39,8 +39,8 @@ h6 {
 .eventWrapperC {
     display: flex;
     justify-content: center;
-    border-bottom-style: solid;
-    border-color: var(--white);
+    /* border-bottom-style: solid;
+    border-color: var(--white); */
 }
 
 .eventWrapper,
@@ -54,13 +54,30 @@ h6 {
     text-align: center;
 }
 
+.brClass {
+    display: block;
+}
+
 .events {
     color: var(--white);
     font-family: var(--body-tertiary-bold);
 }
 
 .seeMore {
-    margin: 14vw 0 0vw 31vw !important;
+    /* margin: 0 auto; */
+    padding: 2vw;
+    background-color: black;
+    border-radius: .3rem;
+    border: none;
+    color: black;
+    background-color: white;
+    margin: 2rem 0 1rem 0;
+}
+
+.seeMore:hover {
+    background-color: #351c49;
+    color: white;
+    cursor: pointer;
 }
 
 .colA {
@@ -71,29 +88,22 @@ h6 {
     margin: 0 3vw 0 -3vw;
 }
 
-@media screen and (min-width:375px) {
+/* @media screen and (min-width:375px) {
     .seeMore {
         margin: 14vw 0 0vw 33vw !important;
     }
-}
+} */
 
 @media screen and (min-width:414px) {
     .scheduleWrapper h2 {
         margin: 0vw 5vw 9vw 5vw;
     }
 
-    .seeMore {
-        margin: 14vw 0 0vw 36vw !important;
-    }
 }
 
 @media screen and (min-width:568px) {
     .scheduleWrapper h1 {
         font-size: 8vw;
-    }
-
-    .seeMore {
-        margin: 12vw 0 0vw 40vw !important;
     }
 
     .accordionBody {
@@ -116,8 +126,12 @@ h6 {
 }
 
 @media screen and (min-width:726px) {
+    .brClass {
+        display: none;
+    }
+
     .scheduleWrapper {
-        background: url("../../Assets/Desktop/Schedule-bkgd-desktop.svg") no-repeat;
+        background: url("../../Assets/Desktop/Schedule-bkgd-desktop.jpg") no-repeat;
         background-size: cover;
         padding: 9vw 0 11vw 0;
     }
@@ -138,7 +152,9 @@ h6 {
     }
 
     .eventWrapper {
-        margin: 0 2vw 0 2vw
+        margin: 0 2vw 0 2vw;
+        border-bottom-style: solid;
+        border-color: var(--white);
     }
 
     .eventWrapper p {
